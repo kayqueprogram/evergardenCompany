@@ -1,0 +1,12 @@
+:root {
+  
+  --color-dark1: #272727;
+
+  
+}
+
+#root {
+  background-color: #212529;
+  font-family:  'Ubuntu', cursive, serif;
+}
+
