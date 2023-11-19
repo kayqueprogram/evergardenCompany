@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import Header from '../shared/Components/navbar/Header';
+import TranslateList from '../shared/Components/card_game/TranslateList';
 import { Container, Row, Col } from 'react-bootstrap';
 import GameList from '../shared/Components/card_game/GameList';
 import Slider from '../shared/Components/carousel/Slider';
@@ -18,14 +19,13 @@ function Home() {
 `
 
 const Section = styled.div`
-  margin: 30px 10px 10px 30px;
-  padding: 34px;
+  margin: 10px 10px 10px 10px;
+  padding: 24px;
 `
 
   return (
     <Container fluid>
-      <Header />
-      <br />
+      
       <Slider />
 
 
@@ -33,6 +33,10 @@ const Section = styled.div`
       <TitleSection>🚀 Lançamentos</TitleSection>
 
       <GameList/>
+     </Section>
+     <Section>
+      <TitleSection> 🕗 Traduções Pendentes !</TitleSection>
+      <TranslateList/>
      </Section>
 
     

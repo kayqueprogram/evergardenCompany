@@ -6,7 +6,12 @@
 }
 
 #root {
+  
   background-color: #212529;
   font-family:  'Ubuntu', cursive, serif;
+}
+
+body {
+  height: 100vh;
 }
 

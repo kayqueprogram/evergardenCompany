@@ -4,10 +4,10 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import styled from 'styled-components';
 
 const StyledCard = styled(Card)`
-  width: 18rem;
+  width: 20rem;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: scale 0.7s ease-in-out; /* Adicionando a animação de transição */
+  transition: scale 0.3s ease-in-out; /* Adicionando a animação de transição */
   
   &:hover {
     opacity: 0.9; /* Alterando a opacidade ao passar o mouse */
@@ -29,9 +29,11 @@ function CardItem({ title, description, src, category, link }) {
       <ListGroup>
         <ListGroup.Item>{category}</ListGroup.Item>
       </ListGroup>
-      <Card.Body>
-        <Card.Link href={link}>Download</Card.Link>
-      </Card.Body>
+      {link? (
+        <Card.Body>
+          <Card.Link href={link}>Download</Card.Link>
+        </Card.Body>
+      ): ''}
     </StyledCard>
   );
 }
