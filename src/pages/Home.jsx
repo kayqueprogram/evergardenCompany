@@ -13,33 +13,44 @@ function Home() {
   const TitleSection = styled.h1`
   color: #ffff;
   padding: 10px;
+  font-size: 36px;
   margin: 27px;
   text-shadow: 16px 16px 16px #000;
 
+  @media(430px) {
+    font-size: 16px;
+  }
+
 `
 
-const Section = styled.div`
+  const Section = styled.div`
   margin: 10px 10px 10px 10px;
   padding: 24px;
 `
 
   return (
     <Container fluid>
+
+        <br/>
+        <Container>
+          <Slider />
+        </Container>
+
+        <Section>
+          <TitleSection>🚀 Lançamentos</TitleSection>
+
+          <GameList />
+        </Section>
+        <Section>
+          <TitleSection> 🕗 Traduções Pendentes !</TitleSection>
+          <TranslateList />
+        </Section>
       
-      <Slider />
 
 
-     <Section>
-      <TitleSection>🚀 Lançamentos</TitleSection>
 
-      <GameList/>
-     </Section>
-     <Section>
-      <TitleSection> 🕗 Traduções Pendentes !</TitleSection>
-      <TranslateList/>
-     </Section>
 
-    
+
     </Container>
   );
 }

@@ -12,9 +12,9 @@ const ListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   
-  justify-content: space-around; /* Ou outra propriedade de alinhamento conforme necessário */
-  max-width: 1300px; /* ou outro valor conforme necessário */
-  margin: 0 auto; /* Centraliza o contêiner na tela */
+  justify-content: space-around; 
+  max-width: 1350px;
+  margin: 0 auto; 
 `;
 
 const GameList = () => {

@@ -9,6 +9,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   align-itens: center;
   text-align: center;
+  max-width: 1300px;
 
   
 
@@ -16,19 +17,19 @@ const StyledContainer = styled.div`
 
 function Slider() {
   return (
-    <Container fluid >
+    
       <StyledContainer>
         <Carousel>
           <Carousel.Item interval={1000}>
-            <Image src="https://cdn.discordapp.com/attachments/995485098336067675/1175239739855613992/Traduzimos_vns_para_vocE.png?ex=656a824c&is=65580d4c&hm=a3c626c8609062bb7dcb21f4cbe04947bbf3a426c78a3306557ac96a53bedcc6&" fluid />
+            <Image style={{ width: '1300px'}} src="https://cdn.discordapp.com/attachments/995485098336067675/1175239739855613992/Traduzimos_vns_para_vocE.png?ex=656a824c&is=65580d4c&hm=a3c626c8609062bb7dcb21f4cbe04947bbf3a426c78a3306557ac96a53bedcc6&" fluid />
           </Carousel.Item>
           <Carousel.Item>
-            <Image src='https://cdn.discordapp.com/attachments/995485098336067675/1175236831621697628/A_Date_With_Natsuki_2_2.png?ex=656a7f97&is=65580a97&hm=de8205360ae304820b34e08404c1a49f69a3e837dfcfc0c24953e4813c011881&' fluid />
+            <Image style={{ width: '1300px'}} src='https://cdn.discordapp.com/attachments/995485098336067675/1175236831621697628/A_Date_With_Natsuki_2_2.png?ex=656a7f97&is=65580a97&hm=de8205360ae304820b34e08404c1a49f69a3e837dfcfc0c24953e4813c011881&' fluid />
           </Carousel.Item>
 
         </Carousel>
       </StyledContainer>
-    </Container>
+   
   );
 }
 

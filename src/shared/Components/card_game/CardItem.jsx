@@ -4,14 +4,15 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import styled from 'styled-components';
 
 const StyledCard = styled(Card)`
-  width: 20rem;
+  width: 19rem;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: scale 0.3s ease-in-out; /* Adicionando a animação de transição */
   
   &:hover {
+    scale: 1.09;
     opacity: 0.9; /* Alterando a opacidade ao passar o mouse */
-    scale: 1.1;
+    
     cursor: pointer;
   }
 `;
@@ -21,7 +22,7 @@ function CardItem({ title, description, src, category, link }) {
     <StyledCard bg="dark">
       <Card.Img variant="top" src={src} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title style={{ color: "#fff"}}>{title}</Card.Title>
         <Card.Text style={{ color: "#fff" }}>
           {description}
         </Card.Text>
