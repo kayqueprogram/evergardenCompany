@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import Header from '../shared/Components/navbar/Header';
+import './Home.css'
 import TranslateList from '../shared/Components/card_game/TranslateList';
 import { Container, Row, Col } from 'react-bootstrap';
 import GameList from '../shared/Components/card_game/GameList';
@@ -13,9 +13,11 @@ function Home() {
   const TitleSection = styled.h1`
   color: #ffff;
   padding: 10px;
-  font-size: 36px;
-  margin: 27px;
+  font-size: 30px;
+  margin: 31px;
   text-shadow: 16px 16px 16px #000;
+  
+
 
   @media(430px) {
     font-size: 16px;
@@ -37,12 +39,12 @@ function Home() {
         </Container>
 
         <Section>
-          <TitleSection>🚀 Lançamentos</TitleSection>
+          <TitleSection className='title-section'>🚀 Lançamentos</TitleSection>
 
           <GameList />
         </Section>
         <Section>
-          <TitleSection> 🕗 Traduções Pendentes !</TitleSection>
+          <TitleSection className='title-section'> 🕗 Traduções Pendentes !</TitleSection>
           <TranslateList />
         </Section>
       

@@ -4,13 +4,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import styled from 'styled-components';
 
 const StyledCard = styled(Card)`
-  width: 19rem;
-  margin: 10px;
+  width: 17.9rem;
+  margin: 13px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: scale 0.3s ease-in-out; /* Adicionando a animação de transição */
+ 
   
   &:hover {
-    scale: 1.09;
+    scale: 1.07;
     opacity: 0.9; /* Alterando a opacidade ao passar o mouse */
     
     cursor: pointer;
